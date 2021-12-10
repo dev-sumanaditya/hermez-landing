@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import Fade from 'react-reveal/Fade';
 import './homepage.css'
 
 const HomePage = () => {
     return (
         <div className="min-h-screen">
             <div className="relative">
-                <div className="fixed top-0 right-0 w-3/12 h-full z-10 overflow-hidden">
+                <div className="fixed top-0 right-0 w-6/12 h-full z-10 overflow-hidden">
                         <video onContextMenu={e => e.preventDefault()} className="videoBG" preload="auto" autoPlay muted loop>
                             <source src={`${process.env.PUBLIC_URL}/assets/video/dark1.mp4`} type="video/mp4"/>
                         </video>
